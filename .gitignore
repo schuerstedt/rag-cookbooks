@@ -47,11 +47,12 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Data files
-*.csv
-*.json
-*.pdf
-data/
+# Data files - exclude sensitive and large files
+data/.env
+data/secrets.json
+data/credentials.json
+data/config.json
+data/.cache/
 temp/
 
 # API Keys and secrets
